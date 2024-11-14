@@ -1,0 +1,81 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px 100px 0px;
+  background-color: #f6f8ff;
+  position: relative;
+}
+.hero-content {
+  width: 1100px;
+  z-index: 10;
+  position: relative;
+}
+.carousel-control-next-icon {
+  background-image: url("https://www.techcareer.net/assets/images/common/pagination-icon.svg") !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("https://www.techcareer.net/assets/images/common/pagination-icon.svg") !important;
+  transform: translateY(-50%) rotate(180deg);
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: unset !important;
+  opacity: 1 !important;
+}
+.carousel-control-next {
+  right: -18px !important;
+}
+.carousel-control-prev {
+  left: -21px !important;
+}
+.carousel-indicators {
+  background: #293349 !important;
+  margin: 0 !important;
+  bottom: -50px !important;
+}
+
+.hero-custom-bg {
+  position: absolute;
+  bottom: 0;
+  height: 126px;
+  width: 100%;
+  background-color: #293349;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 100% !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+.carousel-indicators .active {
+  background-color: #00c26d !important;
+}
+
+.carousel-item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 0px 16px 16px 0px;
+  border-image-slice: 0 16 16 0;
+  border-image-source: linear-gradient(
+    -125deg,
+    transparent 13px,
+    #00c26d 0 calc(100% - 9px),
+    transparent 0
+  );
+}
+
+#bg-img1 {
+  position: absolute;
+  top: -14px;
+  left: -13px;
+  z-index: -1;
+}
+#bg-img2 {
+  position: absolute;
+  top: -28px;
+  right: -26px;
+  z-index: -1;
+}
